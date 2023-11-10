@@ -24,9 +24,9 @@
 
 #pageActionButton { display: none !important; }
 
-#PanelUI-menu-button { padding: 0px !important; }
+/* #PanelUI-menu-button { padding: 0px !important; }
 #PanelUI-menu-button .toolbarbutton-icon { width: 1px !important; }
-#PanelUI-menu-button .toolbarbutton-badge-stack { padding: 0px !important; }
+#PanelUI-menu-button .toolbarbutton-badge-stack { padding: 0px !important; } */
 
 
 
@@ -87,11 +87,25 @@
 
 
 /* Disable the Navigation Buttons */
-#back-button,
-#forward-button { display: none !important; }
+#forward-button,
+#reload-button,
+#stop-button { display: none !important; }
+
+/* Disable Always open in container button */
+#pageAction-urlbar-_testpilot-containers { visibility: collapse !important; }
+
+/* Disable Reader View button in URL bar*/
+#reader-mode-button { display: none !important }
+
+/* Disable Bookmark Star button from URL bar */
+#star-button-box { display: none !important; }
+
+/* Hide Container Label from URL bar*/
+#userContext-label { display: none !important; }
+
 
 /* Disables the Tracking Protection Shield */
-/* #tracking-protection-icon-container { display: none !important; } */
+#tracking-protection-icon-container { display: none !important; }
 
 /* Encryption and Permissions icons */
   /* Only hides permission items */
@@ -101,12 +115,14 @@
 
 /* Hide everything BUT the zoom indicator within the URL Bar */
 /* #page-action-buttons > :not(#urlbar-zoom-button) { display: none !important; } */
+/* Hide zoom indicator */
+#urlbar-zoom-button { display: none !important }
 
 /* Hide the »Go«-arrow in the URL Bar */
 #urlbar-go-button { display: none !important; }
 
 /* Hides the Extensions Menu Icon */
-#unified-extensions-button { display: none !important; }
+/* #unified-extensions-button { display: none !important; } */
 
 
 
